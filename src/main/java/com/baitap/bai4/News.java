@@ -1,9 +1,5 @@
 package com.baitap.bai4;
 
-import java.util.ArrayList;
-
-import static oracle.jrockit.jfr.events.Bits.floatValue;
-
 public class News implements INews {
     //The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
     //
@@ -69,14 +65,20 @@ public class News implements INews {
     }
 
     private int[] rateList = new int[3];
+
     public int[] getRateList() {
         return rateList;
     }
+
     public void setRateList(int[] rateList) {
         this.rateList = rateList;
     }
 
-    public void calculate(){
-        averageRate = floatValue((this.rateList[0] + this.rateList[1] + this.rateList[2]))/3;
+    public void calculate() {
+        int sum = 0;
+        for (int i = 0; i < this.rateList.length; i++) {
+            sum += this.rateList[i];
+        }
+        averageRate = (float) sum / 3;
     }
 }
