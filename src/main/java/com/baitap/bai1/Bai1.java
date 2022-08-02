@@ -21,9 +21,6 @@ public class Bai1 {
             bill = 2834 * (num - 300) + 2536 * 100 + 2014 * 100 + 1734 * 50 + 1678 * 50;
         } else if (num > 400) {
             bill = 2927 * (num - 400) + 2834 * 100 + 2536 * 100 + 2014 * 100 + 1734 * 50 + 1678 * 50;
-        } else {
-            // Khi lượng tiêu thụ điện = 0
-            bill = 0;
         }
 
         System.out.println("Tiền điện 1 tháng: " + bill + " VND");

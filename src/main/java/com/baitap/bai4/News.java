@@ -55,7 +55,6 @@ public class News implements INews {
         return averageRate;
     }
 
-    @Override
     public void display() {
         System.out.println("Title: " + getTitle());
         System.out.println("Publish Date: " + getPublishDate());
@@ -65,10 +64,6 @@ public class News implements INews {
     }
 
     private int[] rateList = new int[3];
-
-    public int[] getRateList() {
-        return rateList;
-    }
 
     public void setRateList(int[] rateList) {
         this.rateList = rateList;
