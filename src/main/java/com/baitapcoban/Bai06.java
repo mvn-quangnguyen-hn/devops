@@ -2,7 +2,7 @@ package com.baitapcoban;
 
 import java.util.Scanner;
 
-public class Bai6 {
+public class Bai06 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Nhập n: ");

@@ -2,7 +2,7 @@ package com.baitapcoban;
 
 import java.util.Scanner;
 
-public class Bai4 {
+public class Bai04 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
