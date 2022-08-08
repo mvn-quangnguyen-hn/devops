@@ -24,7 +24,7 @@ public class Bai10 {
 
         for (String n : lst) {
             if (n.matches("B170[1-9]{4}$")) {
-            System.out.println("Ok");
+                System.out.println("Ok");
             } else {
                 System.out.println("Not OK");
             }

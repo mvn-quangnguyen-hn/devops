@@ -9,7 +9,6 @@ public class Bai09 {
         int n = in.nextInt();
 
         System.out.print(fi(n));
-
     }
 
     public static int fi(int n) {

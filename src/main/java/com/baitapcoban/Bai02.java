@@ -1,5 +1,6 @@
 package com.baitapcoban;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Bai02 {
@@ -9,35 +10,39 @@ public class Bai02 {
         System.out.print("Nhập số: ");
         num = in.nextInt();
 
-        if (num == 0) {
-            System.out.println("Không");
-        }
-        if (num == 1) {
-            System.out.println("Một");
-        }
-        if (num == 2) {
-            System.out.println("Hai");
-        }
-        if (num == 3) {
-            System.out.println("Ba");
-        }
-        if (num == 4) {
-            System.out.println("Bốn");
-        }
-        if (num == 5) {
-            System.out.println("Năm");
-        }
-        if (num == 6) {
-            System.out.println("Sáu");
-        }
-        if (num == 7) {
-            System.out.println("Bảy");
-        }
-        if (num == 8) {
-            System.out.println("Tám");
-        }
-        if (num == 9) {
-            System.out.println("Chín");
+        String str = Integer.toString(num);;
+
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == '0') {
+                System.out.print("Không ");
+            }
+            if (str.charAt(i) == '1') {
+                System.out.print("Một ");
+            }
+            if (str.charAt(i) == '2') {
+                System.out.print("Hai ");
+            }
+            if (str.charAt(i) == '3') {
+                System.out.print("Ba ");
+            }
+            if (str.charAt(i) == '4') {
+                System.out.print("Bốn ");
+            }
+            if (str.charAt(i) == '5') {
+                System.out.print("Năm ");
+            }
+            if (str.charAt(i) == '6') {
+                System.out.print("Sáu ");
+            }
+            if (str.charAt(i) == '7') {
+                System.out.print("Bảy ");
+            }
+            if (str.charAt(i) == '8') {
+                System.out.print("Tám ");
+            }
+            if (str.charAt(i) == '9') {
+                System.out.print("Chín ");
+            }
         }
     }
 }

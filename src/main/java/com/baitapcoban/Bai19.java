@@ -11,14 +11,11 @@ public class Bai19 {
         String a = "a";
         int count = 0;
 
-        System.out.print("Vị trí ký tự a là: ");
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == a.charAt(0)) {
-                System.out.print(" " + i);
                 count++;
             }
         }
-        System.out.println();
         System.out.print("a xuất hiện " + count + " lần");
     }
 }

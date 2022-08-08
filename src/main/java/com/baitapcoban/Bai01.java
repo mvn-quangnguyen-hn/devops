@@ -12,7 +12,6 @@ public class Bai01 {
         if (num >= 0) {
             System.out.println("Đây là số nguyên dương");
         } else {
-
             System.out.println("Đây là số nguyên âm");
         }
     }

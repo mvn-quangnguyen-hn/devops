@@ -16,6 +16,8 @@ public class Bai08 {
     }
 
     public static boolean check(int n) {
+        int halfN = n / 2;
+        System.out.println(halfN);
         if (n < 2) {
             return false;
         }
@@ -28,7 +30,7 @@ public class Bai08 {
             return false;
         }
 
-        for (int i = 3; i <= (n / 2); i += 2) {
+        for (int i = 3; i <= halfN; i += 2) {
             if (n % i == 0) {
                 return false;
             }

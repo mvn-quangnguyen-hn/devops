@@ -10,11 +10,11 @@ public class Bai16 {
         String str = in.next();
 
         System.out.print("Nhập 1 ký tự: ");
-        String l = in.next();
+        Character l = in.next().charAt(0);
 
-        boolean isFound = str.contains(l);
+        boolean isFound = str.contains(Character.toString(l));
 
-        if (isFound){
+        if (isFound) {
             System.out.print("Có");
         } else {
             System.out.print("Không");
