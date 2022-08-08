@@ -1,8 +1,5 @@
 package com.baitapoop.bai3;
 
-import com.baitap.bai4.News;
-import com.baitapoop.bai2.Candidate;
-
 import java.util.*;
 
 public class Main {
@@ -69,7 +66,15 @@ public class Main {
         Scanner in2 = new Scanner(System.in);
 
         System.out.print("ID: ");
-        sv.setId(in2.nextInt());
+        int t = in2.nextInt();
+        for (int i = 0; i < arr.size(); i++) {
+            if (arr.get(i).getId() == t) {
+                System.out.print("Nhập lại ID: ");
+                t = in2.nextInt();
+                i = -1;
+            }
+        }
+        sv.setId(t);
         System.out.print("Name: ");
         sv.setName(in2.next());
         System.out.print("Age: ");
@@ -117,7 +122,7 @@ public class Main {
     public static void deleteStudent(ArrayList<Student> arr, int n) {
         if (notExist(arr, n)) {
             for (int i = 0; i < arr.size(); i++) {
-                if (arr.get(i).getId()==n) {
+                if (arr.get(i).getId() == n) {
                     arr.remove(i);
                 }
             }
