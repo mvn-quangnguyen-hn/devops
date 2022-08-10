@@ -88,7 +88,7 @@ public class Main {
         System.out.println();
     }
 
-    public static boolean notExist(ArrayList<Student> arr, int n) {
+    public static boolean exist(ArrayList<Student> arr, int n) {
         for (Student i : arr) {
             if (i.getId() == n) {
                 return true;
@@ -100,7 +100,7 @@ public class Main {
     public static void editStudent(ArrayList<Student> arr, int n) {
         Scanner in3 = new Scanner(System.in);
 
-        if (notExist(arr, n)) {
+        if (exist(arr, n)) {
             for (Student i : arr) {
                 if (i.getId() == n) {
                     System.out.print("Name: ");
@@ -120,7 +120,7 @@ public class Main {
     }
 
     public static void deleteStudent(ArrayList<Student> arr, int n) {
-        if (notExist(arr, n)) {
+        if (exist(arr, n)) {
             for (int i = 0; i < arr.size(); i++) {
                 if (arr.get(i).getId() == n) {
                     arr.remove(i);

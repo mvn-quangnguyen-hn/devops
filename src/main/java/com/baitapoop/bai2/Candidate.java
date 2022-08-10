@@ -65,8 +65,6 @@ public class Candidate {
     public boolean checkSum() {
         float sum = getToan() + getVan() + getAnh();
 
-        if (sum <= 1) return false;
-
-        return true;
+        return !(sum <= 1);
     }
 }
