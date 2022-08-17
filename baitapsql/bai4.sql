@@ -1,6 +1,6 @@
 CREATE TABLE Grades (
   Name CHAR(20),
-  ID INT,
+  ID INT UNSIGNED,
   Midterm1 INT,
   Midterm2 INT,
   Final INT
@@ -15,4 +15,3 @@ VALUES ('David',42334,34,54,124),
 SELECT Name,ID FROM Grades
 WHERE Final > (Midterm1 + Midterm2)
 ORDER BY LEFT(NAME, 3), id ASC;
-

@@ -1,4 +1,11 @@
-INSERT INTO users (name,score) 
+CREATE TABLE users (
+  id INT NOT NULL AUTO_INCREMENT,
+  name CHAR(20),
+  score INT,
+  PRIMARY KEY (id)
+);
+
+INSERT INTO users (name,score)
 VALUES ('gongy',3001),
 ('urandom',2401),
 ('eduardische',2477),

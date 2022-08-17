@@ -10,12 +10,9 @@ CREATE TABLE expressions (
 INSERT INTO expressions (a,b,operation,c)
 VALUES (2,3,'+',5),(2,3,'+',6),(3,2,'/',1),(4,7,'*',28),(54,2,'-',27),(3,0,'/',0);
 
-WITH result AS (
-	SELECT * FROM expressions
-	WHERE (operation = '+' AND a + b = c)
-	OR (operation = '-' AND a - b = c)
-	OR (operation = '*' AND a * b = c)
-	OR (operation = '/' AND a / b = c)
-)
-
-SELECT * FROM result;
+SELECT * FROM expressions
+WHERE (operation = '+' AND a + b = c)
+OR (operation = '-' AND a - b = c)
+OR (operation = '*' AND a * b = c)
+OR (operation = '/' AND a / b = c)
+);

@@ -13,7 +13,5 @@ VALUES ('Tomato',10,4),
 ('Feta',40,1);
 
 SELECT name FROM Products
-WHERE price * quantity = (SELECT max(price * quantity) FROM Products)
-ORDER BY name ASC
+ORDER BY price * quantity DESC, name ASC
 LIMIT 1;
-
