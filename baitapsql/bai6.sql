@@ -20,5 +20,5 @@ VALUES ('Mikel','Cover','%Mikel_Cover%'),
 ('Julietta','Beer','Tn35g5h51u7ltW946J');
 
 SELECT * FROM users
-WHERE BINARY attribute LIKE CONCAT('%', first_name, '\_', second_name, '%')
+WHERE BINARY attribute LIKE CONCAT('%\%', first_name, '\_', second_name, '\%%')
 ORDER BY attribute ASC;
